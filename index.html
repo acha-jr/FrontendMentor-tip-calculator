@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><img src="./images/logo.svg" alt="" /></header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="calc">
+            <h5>Bill</h5>
+            <input type="number" placeholder="0" />
+
+            <h5>Select Tip %</h5>
+            <div class="tip-option">
+              <h2><span class="percent">5</span><span>%</span></h2>
+              <h2><span class="percent">10</span><span>%</span></h2>
+              <h2><span class="percent">15</span><span>%</span></h2>
+              <h2><span class="percent">25</span><span>%</span></h2>
+              <h2><span class="percent">50</span><span>%</span></h2>
+              <input id="custom" type="number" placeholder="Custom" />
+            </div>
+
+            <div error-text="Can't be zero" class="persons">
+              <h5>Number of People</h5>
+              <h5 class="error"></h5>
+              <input type="number" placeholder="0" />
+            </div>
+          </div>
+
+          <div class="result">
+            <div class="amount">
+              <h5>
+                Tip Amount <br />
+                <span>/ person</span>
+              </h5>
+              <h1 class="value" id="amount"><span>$</span>0.00</h1>
+            </div>
+
+            <div class="total">
+              <h5>
+                Total <br />
+                <span>/ person</span>
+              </h5>
+              <h1 class="value" id="total"><span>$</span>0.00</h1>
+            </div>
+
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/acha-jr" target="_blank">acha-jr</a>.
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
